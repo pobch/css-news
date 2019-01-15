@@ -5,6 +5,14 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
+body > header {
+    grid-column: 1 / 6;
+}
+
+#menu {
+    grid-column: 1 / 5;
+}
+
 #menu ul {
     display: flex;
 }
@@ -12,4 +20,19 @@ body {
 #menu ul li {
     flex: 1 1 0;
     background-color: white;
+}
+
+#related {
+    grid-column: 5 / 6;
+    grid-row: 2 / 5;
+}
+
+#news {
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+}
+
+footer {
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
 }
