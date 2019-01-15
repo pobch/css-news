@@ -29,7 +29,7 @@ aside {
 }
 
 #signup a:first-child {
-    border-right: white solid 1px;
+    border-right: 1px solid white;
 }
 
 #signup a {
@@ -45,6 +45,30 @@ aside {
     list-style-type: none;
     text-align: center;
     padding: 1em;
+}
+
+#menu li:first-child {
+    border-top: 5px solid #E1493E;
+}
+
+#menu li:nth-child(2) {
+    border-top: 5px solid #8ABA56;
+}
+
+#menu li:nth-child(3) {
+    border-top: 5px solid #5B4282;
+}
+
+#menu li:nth-child(4) {
+    border-top: 5px solid #FF8932;
+}
+
+#menu li:nth-child(5) {
+    border-top: 5px solid #19B6E9;
+}
+
+#menu li:nth-child(6) {
+    border-top: 5px solid #E84C8B;
 }
 
 #menu li a {
