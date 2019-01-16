@@ -1,0 +1,14 @@
+@media screen and (max-width: 60em) {
+    body {
+        width: 100%;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    
+}
