@@ -10,5 +10,25 @@
 }
 
 @media screen and (max-width: 30em) {
+    header h2 {
+        display: none;
+    }
     
+    article header, article header a {
+        position: unset;
+        color: black;
+        text-shadow: unset;
+    }
+
+    article header {
+        width: 100%;
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        text-align: left;
+    }
 }
