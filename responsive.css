@@ -24,11 +24,49 @@
         width: 100%;
     }
 
+    #menu input:checked + label::before {
+        content: "\2715"; /* X button */
+    }
+
+    #menu label::before {
+        content: "\2630"; /* Ham button */
+    }
+
     #menu ul {
         flex-direction: column;
     }
 
     #menu ul li {
         text-align: left;
+    }
+
+    #menu li:nth-child(1) {
+        border: unset;
+        border-left: 5px solid #E1493E;
+    }
+    
+    #menu li:nth-child(2) {
+        border: unset;
+        border-left: 5px solid #8ABA56;
+    }
+    
+    #menu li:nth-child(3) {
+        border: unset;
+        border-left: 5px solid #5B4282;
+    }
+    
+    #menu li:nth-child(4) {
+        border: unset;
+        border-left: 5px solid #FF8932;
+    }
+    
+    #menu li:nth-child(5) {
+        border: unset;
+        border-left: 5px solid #19B6E9;
+    }
+    
+    #menu li:nth-child(6) {
+        border: unset;
+        border-left: 5px solid #E84C8B;
     }
 }
