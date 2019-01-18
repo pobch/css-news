@@ -24,12 +24,18 @@
         width: 100%;
     }
 
+    #menu label::before {
+        content: "\2630"; /* Ham button */
+        font-size: 40px;
+        font-weight: 300;
+    }
+
     #menu input:checked + label::before {
         content: "\2715"; /* X button */
     }
 
-    #menu label::before {
-        content: "\2630"; /* Ham button */
+    #menu input:not(:checked) ~ ul {
+        display: none;
     }
 
     #menu ul {
