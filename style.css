@@ -4,40 +4,37 @@
     box-sizing: border-box;
 }
 
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+/* header */
 
-h1, h2, h3, h4, h5, h6, article footer, a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-header {
+body > header {
     background-color: #046DD5;
-}
-
-aside {
-    background-color: #2A2F33;
     color: white;
+    padding: 1em;
 }
 
-#signup a:first-child {
+body > header h1,
+body > header h2 {
+    margin: 0;
+}
+
+body > header a {
+    color: white;
+    text-decoration: none;
+}
+
+body > header #signup a:first-child {
     border-right: 1px solid white;
+    padding-left: 0;
 }
 
-#signup a {
-    display: inline-block;
+body > header #signup a {
     padding: 0 1em;
 }
 
-#menu > input {
+/* navigation */
+
+#menu #hamburger,
+#menu .hamburger {
     display: none;
 }
 
@@ -46,13 +43,23 @@ aside {
 }
 
 #menu li {
+    background-color: white;
     list-style-type: none;
     text-align: center;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 #menu li a {
     color: black;
+    text-decoration: none;
+}
+
+#menu li:hover {
+    background-color: #2a2f33;
+}
+
+#menu li:hover a {
+    color: white;
 }
 
 #menu li:first-child {
@@ -79,36 +86,121 @@ aside {
     border-top: 5px solid #E84C8B;
 }
 
-article {
-    position: relative;
-}
+/* article */
 
-article header {
-    background-color: initial;
+#news header {
     position: absolute;
-    width: 300px;
-    text-shadow: 5px 5px 5px #2A2F33;
+    max-width: 10em;
+    padding: 1em;
 }
 
-article footer {
+#news header h1 {
+    margin: 0;
+    text-shadow: .2em .2em .2em black;
+}
+
+#news header a {
+    color: white;
+    text-decoration: none;
+}
+
+#news img {
+    width: 100%;
+}
+
+#news > article {
+    background-color: white;
+    margin: 1em 1em 1em 0;
+}
+
+#news > article p {
+    padding: 0 1em;
+}
+
+#news > article p:first-of-type::first-letter {
+    font-size: 2em;
+}
+
+#news footer {
     background-color: #F4655F;
     color: white;
     padding: 1em;
 }
 
-article footer a {
-    text-decoration: underline;
-}
-
-article footer::before {
-    content: "By";
-}
-
-footer {
-    background-color: #2A2F33;
+#news footer a {
     color: white;
 }
 
-img {
-    width: 100%;
+#news footer .author::before {
+    content: 'By '
+}
+
+#news footer .tags {
+    margin-right: 1em;
+}
+
+#news footer .comments {
+    margin-left: 1em;
+}
+
+#news footer .comments::after {
+    content: ' comments';
+}
+
+/* related bar */
+
+#related {
+    background-color: #2A2F33;
+    padding: 1em;
+}
+
+#related h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#related p {
+    color: white;
+}
+
+/* footer */
+
+body > footer {
+    background-color: #2A2F33;
+    color: white;
+    padding: 1em;
+    margin-right: 1em;
+}
+
+body > footer p {
+    margin: 0;
+}
+
+/* fonts */
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.4em;
+}
+
+header h2 {
+    font-size: 1em;
+}
+
+header a {
+    font-size: 0.8em;
+}
+
+#news header {
+    font-size: 1.5em;
+}
+
+#news footer {
+    font-size: 0.8em;
 }
