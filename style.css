@@ -179,8 +179,6 @@ body > footer p {
 /* fonts */
 
 body {
-    max-width: 1200px;
-    margin: 0 auto;
     font-family: Verdana, sans-serif;
 }
 

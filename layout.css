@@ -1,15 +1,28 @@
 body {
     background-color: #EDEFF0;
-    max-width: 60em;
+    margin: 0 auto;
+    width: 60em;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-auto-rows: minmax(40px, auto);
+    grid-template-columns: [start] 4fr [middle] 1fr [end];
+    grid-template-rows: [start] auto [nav] auto [news] 1fr [footer] auto [end];
 }
 
 body > header {
-    grid-column: 1 / 6;
+    grid-column: start / end;
 }
 
+#menu {
+    grid-row: nav;
+}
+
+aside {
+    grid-column: middle;
+    grid-row: nav / end;
+}
+
+
+
+/* 
 #menu {
     grid-column: 1 / 5;
 }
@@ -38,4 +51,4 @@ footer {
     grid-row: 4 / 5;
     display: flex;
     align-items: center;
-}
+} */
