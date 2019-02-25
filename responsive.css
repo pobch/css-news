@@ -1,0 +1,26 @@
+/* default is for desktop */
+
+/* tablet */
+
+@media (max-width: 60em) {
+    body {
+        width: 100%;
+        grid-template-columns: [start] 1fr [end];
+        grid-template-rows: [start] auto [nav] auto [news] auto [footer] auto [end]
+    }
+    aside {
+        display: none;
+    }
+    #news article {
+        margin: 0 0 1em;
+    }
+    body > footer {
+        margin: 0;
+    }
+}
+
+/* phone */
+
+@media (max-width: 30em) {
+
+}
