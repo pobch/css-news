@@ -8,12 +8,15 @@
         grid-template-columns: [start] 1fr [end];
         grid-template-rows: [start] auto [nav] auto [news] auto [footer] auto [end]
     }
+
     aside {
         display: none;
     }
+
     #news article {
         margin: 0 0 1em;
     }
+
     body > footer {
         margin: 0;
     }
@@ -22,5 +25,41 @@
 /* phone */
 
 @media (max-width: 30em) {
+    body > header h1 {
+        font-size: 1.5em;
+    }
 
+    body > header h2 {
+        display: none;
+    }
+
+    body > header {
+        display: block;
+    }
+
+    #menu .hamburger {
+        /* this is <label> */
+        display: block;
+        background-color: #2a2f33;
+        color: white;
+        padding: 1em;
+    }
+
+    #menu .hamburger::before {
+        content: '\2630';
+    }
+
+    #hamburger:checked + .hamburger::before {
+        content: '\2715';
+    }
+
+    #menu ul {
+        flex-direction: column;
+    }
+
+    #menu ul li {
+        /* max-height: 1em; */
+        margin: 0;
+        padding: 0;  
+    }
 }
