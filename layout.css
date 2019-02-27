@@ -11,10 +11,6 @@ body > header {
     grid-column: start / end;
 }
 
-/* #menu {
-    grid-row: nav;
-} */
-
 aside {
     grid-column: middle;
     grid-row: nav / end;
