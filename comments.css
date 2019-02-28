@@ -1,0 +1,21 @@
+#comments {
+    padding: 1em;
+}
+
+#comments h1 {
+    margin-bottom: 1em;
+}
+
+#comments article {
+    margin-bottom: 1em;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.comment p {
+    grid-column: 1 / span 2;
+    background-color: #edeff0;
+}
