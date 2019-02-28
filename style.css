@@ -113,11 +113,11 @@ body > header #signup a {
     margin: 1em 1em 1em 0;
 }
 
-#news > article p {
+#news > article > p {
     padding: 0 1em;
 }
 
-#news > article p:first-of-type::first-letter {
+#news > article > p:first-of-type::first-letter {
     font-size: 2em;
 }
 
