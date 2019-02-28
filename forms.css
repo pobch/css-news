@@ -1,0 +1,54 @@
+#register h1,
+#login h1 {
+    text-align: center;
+}
+
+form {
+    background-color: white;
+    color: black;
+    margin: 2em auto;
+    width: 20em;
+    padding: 1em;
+}
+
+label {
+    padding: 1em;
+    display: block;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid black;
+    margin-top: 1em;
+    
+    width: 100%;
+
+    font-size: 0.9em;
+}
+
+input:focus {
+    border-bottom: 1px solid #046dd5;
+}
+
+input[type=submit] {
+    display: block;
+
+    border: none;
+    
+    color: white;
+    background-color: black;
+    
+    width: auto;
+
+    padding: 1em;
+    margin: 1em 1em 1em auto;
+}
+
+
+
+
+@media (max-width: 30em) {
+    #register, #login {
+        background-color: white;
+    }
+}
