@@ -1,4 +1,4 @@
-* {
+*:not(p) {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -53,13 +53,24 @@ h1, h2, h3 {
 }
 
 #content a {
+    text-decoration: none;
+    color:  #883333;
+}
 
+#content .introduction {
+    font-style: italic;
 }
 
 #content h3 {
-
+    font-size: 160%;
+    margin: 10px 0;
 }
 
 #content img {
-    
+    float: right;
+    padding: 0 0 10px 10px;
+}
+
+#content .news-item {
+    border-bottom: 1px solid black;
 }
