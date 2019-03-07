@@ -46,3 +46,20 @@ h1, h2, h3 {
     text-decoration: none;
     color: #000000;
 }
+
+#content {
+    width: 800px;
+    padding: 0 10px;
+}
+
+#content a {
+
+}
+
+#content h3 {
+
+}
+
+#content img {
+    
+}
