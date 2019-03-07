@@ -1,32 +1,33 @@
 * {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-}
-
-html {
-    background-color: #ddddff;
+    margin: 0;
 }
 
 body {
     font-family: 'Times New Roman', Times, serif;
-    width: 800px;
     background-color: #ffffff;
-    margin: 0 auto;
+    padding-left: 40px;
+    background-image: url(stripe.png);
+    background-repeat: repeat-y;
 }
 
 h1, h2, h3 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #header {
-    background-color: #666;
-    color: #fff;
+    background-color: #000000;
     padding: 20px;
+    color: white;
+}
+
+#header h2 {
+    font-size: 100%;
 }
 
 #menu {
-    background-color: #340300;
+    background-color: #333333;   
 }
 
 #menu ul {
@@ -36,60 +37,12 @@ h1, h2, h3 {
 
 #menu li {
     display: inline;
-    border-right: 1px solid #fff;
+    background-color:  #ffffff;
+    margin: 10px;
     padding: 0 10px;
-}
-
-#menu li:last-of-type {
-    border-right: 0;
 }
 
 #menu a {
-    color: #fff;
     text-decoration: none;
-}
-
-#content {
-    padding: 0 10px;
-}
-
-#content a {
-    text-decoration: none;
-}
-
-#content h3 {
-    font-size: 160%;
-    margin: 10px 0;
-}
-
-#content img {
-    float: left;
-    margin: 0 10px 10px 0;
-}
-
-#content .introduction {
-    font-style: italic;
-}
-
-#content .news-item {
-    border-bottom: 1px solid black;
-}
-
-#content ul {
-    list-style-type: none;
-    margin: 10px 0;
-}
-
-#content li {
-    display: inline;
-    background-color:  #333333;
-    padding: 3px 10px;
-}
-
-#content li a {
-    color: white;
-}
-
-#footer {
-    padding: 0 10px;
+    color: #000000;
 }
