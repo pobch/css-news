@@ -90,3 +90,27 @@ h1, h2, h3 {
 #content .news-item {
     border-bottom: 1px solid black;
 }
+
+#content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#content li {
+    display: inline;
+    border-bottom: 3px solid #996633;
+    padding: 3px 10px;
+}
+
+#content li a {
+    color: #333;
+}
+
+#footer {
+    background-color: white;
+    padding: 0 10px;
+}
+
+#footer p {
+    margin: 0;
+}
