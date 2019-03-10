@@ -1,7 +1,7 @@
-*:not(p) {
-    /* padding: 0;
-    margin: 0; */
-}
+/* *:not(p) {
+    padding: 0;
+    margin: 0;
+} */
 
 html {
     background-color: #ddddff;
@@ -13,3 +13,32 @@ body {
     margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
 }
+
+h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+    background-color: #336699;
+    color: white;
+    padding: 20px;
+
+    position: relative;
+}
+
+#header h2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+
+    text-align: center;
+
+    background-color: #336699;
+
+    transform-origin: left top;
+    transform: rotate(90deg);
+}
+
