@@ -1,0 +1,35 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        "g g g"
+        "y r b"
+        "o o b";
+}
+
+#green {
+    grid-area: g;
+}
+
+#yellow {
+    grid-area: y;
+}
+
+#red {
+    grid-area: r;
+}
+
+#blue {
+    grid-area: b;
+}
+
+#orange {
+    grid-area: o;
+}
+
+#yellow ul, #red ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
